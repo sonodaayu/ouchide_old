@@ -1,0 +1,37 @@
+/* line 5, app/assets/stylesheets/ouchis.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 9, app/assets/stylesheets/ouchis.scss */
+.topimage img {
+  width: 100%;
+}
+
+/* line 12, app/assets/stylesheets/ouchis.scss */
+.image {
+  display: inline-block;
+  height: 266px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 19, app/assets/stylesheets/ouchis.scss */
+.image img {
+  height: 100%;
+}
+
+/* line 23, app/assets/stylesheets/ouchis.scss */
+.text {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5%;
+  padding-left: 10%;
+}
+
+/* line 29, app/assets/stylesheets/ouchis.scss */
+.allideas {
+  display: flex;
+  justify-content: flex-end;
+}

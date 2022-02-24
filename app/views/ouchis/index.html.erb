@@ -1,0 +1,102 @@
+<%= stylesheet_link_tag "index", :media => "all" %>
+<h1>OUCHIDE</h1>
+<div align='right'>
+<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+</div>
+
+
+
+
+
+
+
+<div class='topimage'>
+<img src='https://kahu.jp/_adkahu/wp-content/uploads/2020/03/754_%E8%A8%98%E4%BA%8B1.jpg'>
+</div>
+<% @ouchi.each do |t| %>
+    <div class='category'>
+    <h1><%= t.category %><h1>
+    </div>
+
+
+    <div class='image'>
+        <% if t.category=='movies' %>
+        <%= image_tag 'movie1.jpg' %>
+        <%= image_tag 'movie2.png' %>
+        <%= image_tag 'movie3.jpg' %>
+           
+             
+        
+        <% elsif t.category=='cooking' %>
+        <%= image_tag 'cooking1' %>
+        <%= image_tag 'cooking2' %>
+        <%= image_tag 'cooking3.jpeg' %>  
+
+
+        <% elsif t.category=='pets' %>
+        <%= image_tag 'pets1.jpg' %>
+        <%= image_tag 'pets2.jpg' %>
+        <%= image_tag 'pets3.jpg' %>
+
+
+        <% elsif t.category=='interiors' %>
+        <%= image_tag 'interior1.jpg' %>
+        <%= image_tag 'interior2.jpg' %>
+        <%= image_tag 'interior3.jpg' %>
+
+        <% elsif t.category=='shopping' %>
+        <%= image_tag 'shopping1.jpg' %>
+        <%= image_tag 'shopping2.jpg' %>
+        <%= image_tag 'shopping3.jpg' %>
+
+        <% elsif t.category=='workout' %>
+        <%= image_tag 'workout1.jpg'%>
+        <%= image_tag 'workout2.jpg' %>
+        <%= image_tag 'workout3.jpg' %>
+
+        <% else t.category=='games' %>
+        <%= image_tag 'games1.jpg' %>
+        <%= image_tag 'games2.jpg' %>
+        <%= image_tag 'games3.jpeg' %>
+        
+
+        <% end %>
+
+    </div>
+
+
+        
+     
+
+
+    <font color='gray'>  
+    <div class='text'>
+    <% @part_ranks=@all_ranks.select{|idea| idea.ouchi_id == t.id} %>
+        <% @part_ranks.first(3).each do |t| %>
+            <p>'<%= t.idea %>'<p>
+            
+        <% end %>
+
+
+       
+       
+    </div>
+    </font>
+
+    
+
+
+
+
+
+
+
+
+<div align='right'>
+    <%= link_to '新着のアイデアを見る>>', ouchi_path(t.id) %>
+    <%= link_to 'アイデアをランキング順に見る>>', ouchi_ideas_path(t.id) %>
+</div>
+<% end %>
+
+
+

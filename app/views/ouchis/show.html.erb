@@ -1,0 +1,57 @@
+<%= stylesheet_link_tag "show", :media => "all" %>
+
+
+<header>
+<h1>OUCHIDE</h1>
+<div class='header-list'>
+<ul>
+<li><%= link_to @new, new_ouchi_idea_path(@ouchi.id) %>
+<li><%= link_to 'トップページへ戻る', ouchis_path %>
+<li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+</ul>
+</div>
+</header>
+
+
+<div class='blurBg'>
+<div align='center'>
+<font color='white' size='7'><h1><%= @ouchi.category %></h1></font>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<% @ideas.each do |t| %>
+  
+  <div class='ideas'>
+  <%=link_to t.user.name, mypage_path(t.user.id) %>
+  <br>
+    <%= t.idea %>
+    
+    
+<br><br><br><br>
+    <% if logged_in? %>
+    <% if t.liked_by?(current_user) %>
+      <%= button_to 'いいねを取り消す', idea_likes_path(t.id), method: :delete %>
+    <% else %>
+      <%= button_to 'いいね', idea_likes_path(t.id) %>
+    <% end %>
+    いいね件数: <%= t.likes.count %>
+    
+
+    <% else %>
+    <%= button_to "いいね", {controller: 'users/registrations', action: 'new'}, {method: :get} %>
+    いいね件数: <%= t.likes.count %>
+    <% end %>
+    
+
+    </div>
+
+    
+<% end %>
+

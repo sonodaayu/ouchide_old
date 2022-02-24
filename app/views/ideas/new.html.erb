@@ -1,0 +1,6 @@
+<%= form_with(model: [@ouchi,@idea],local:true) do |f| %>
+    <%= f.text_area :idea %>
+    <%= button_tag type: 'submit' do %>
+        <i class='far fa-comments'></i>コメントする
+    <% end %>
+<% end %>

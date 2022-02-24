@@ -1,0 +1,36 @@
+/* line 1, app/assets/stylesheets/index.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 5, app/assets/stylesheets/index.scss */
+.topimage img {
+  width: 100%;
+}
+
+/* line 8, app/assets/stylesheets/index.scss */
+.image {
+  display: inline-block;
+  height: 266px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 15, app/assets/stylesheets/index.scss */
+.image img {
+  height: 100%;
+}
+
+/* line 19, app/assets/stylesheets/index.scss */
+.text {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* line 28, app/assets/stylesheets/index.scss */
+.text p {
+  padding-left: 50px;
+  padding-right: 50px;
+}

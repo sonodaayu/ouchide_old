@@ -1,0 +1,174 @@
+/* line 1, app/assets/stylesheets/ideasindex.scss */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+/* line 8, app/assets/stylesheets/ideasindex.scss */
+header ul {
+  display: flex;
+}
+
+/* line 13, app/assets/stylesheets/ideasindex.scss */
+header li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+/* line 19, app/assets/stylesheets/ideasindex.scss */
+.blurBg {
+  background: url(https://angleseyrei.com/wp-content/uploads/2016/10/paper-craft-family-buying-house.jpeg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 30, app/assets/stylesheets/ideasindex.scss */
+.blurBg:before {
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+/* line 46, app/assets/stylesheets/ideasindex.scss */
+.blurBg h1 {
+  margin-top: 150px;
+}
+
+/* line 50, app/assets/stylesheets/ideasindex.scss */
+.rank {
+  margin: 40px;
+  padding: 10px;
+  border: medium solid #dcdcdc;
+}
+/* line 1, app/assets/stylesheets/mypage.scss */
+.ideas {
+  margin: 40px;
+  padding: 10px;
+  border: medium solid #dcdcdc;
+}
+/* line 5, app/assets/stylesheets/ouchis.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 9, app/assets/stylesheets/ouchis.scss */
+.topimage img {
+  width: 100%;
+}
+
+/* line 12, app/assets/stylesheets/ouchis.scss */
+.image {
+  display: inline-block;
+  height: 266px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 19, app/assets/stylesheets/ouchis.scss */
+.image img {
+  height: 100%;
+}
+
+/* line 23, app/assets/stylesheets/ouchis.scss */
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 28, app/assets/stylesheets/ouchis.scss */
+.allideas {
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 1, app/assets/stylesheets/show.scss */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+/* line 8, app/assets/stylesheets/show.scss */
+header ul {
+  display: flex;
+}
+
+/* line 13, app/assets/stylesheets/show.scss */
+header li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+/* line 19, app/assets/stylesheets/show.scss */
+.blurBg {
+  background: url(https://angleseyrei.com/wp-content/uploads/2016/10/paper-craft-family-buying-house.jpeg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 30, app/assets/stylesheets/show.scss */
+.blurBg:before {
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+/* line 46, app/assets/stylesheets/show.scss */
+.blurBg h1 {
+  margin-top: 150px;
+}
+
+/* line 50, app/assets/stylesheets/show.scss */
+.ideas {
+  margin: 40px;
+  padding: 10px;
+  border: medium solid #dcdcdc;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
